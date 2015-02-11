@@ -8,15 +8,14 @@ import (
 
 type Color int
 
-var (
-	B  string
-	U  string
-	C  string
+func init() {
+	if len(FG) > 0 {
+		return
+	}
+
 	FG = make([]string, 256)
 	BG = make([]string, 256)
-)
 
-func init() {
 	tput("bold", &B)
 	tput("smul", &U)
 	tput("sgr0", &C)
