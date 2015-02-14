@@ -1,3 +1,4 @@
+/*
 Package termstyle is used to add some flare to your terminal output.
 
 Install:
@@ -7,4 +8,5 @@ Install:
 	make
 
 **WIP**
-
+*/
+package termstyle
